@@ -1,0 +1,85 @@
+
+:root {
+  color-scheme: dark;
+  --color-canvas-default: #0b0d14;
+  --color-canvas-subtle: #151925;
+  --color-canvas-inset: #10131d;
+  --color-canvas-overlay: #1b2030;
+  --color-fg-default: #edf0f7;
+  --color-fg-muted: #a6aec1;
+  --color-fg-subtle: #7d879d;
+  --color-border-default: #30364a;
+  --color-border-muted: #252b3d;
+  --color-neutral-muted: #252b3d;
+  --color-accent-fg: #b99aff;
+  --color-accent-emphasis: #7743d5;
+  --color-accent-muted: #40276d;
+  --color-accent-subtle: #211833;
+  --color-success-fg: #65d5a3;
+  --color-danger-fg: #ff8099;
+  --color-attention-fg: #f2c879;
+  --color-btn-text: #edf0f7;
+  --color-btn-bg: #22283a;
+  --color-btn-border: #394159;
+  --color-btn-hover-bg: #30384f;
+  --color-btn-hover-border: #535d78;
+  --color-btn-active-bg: #343d58;
+  --color-btn-primary-text: #ffffff;
+  --color-btn-primary-bg: #7138d9;
+  --color-btn-primary-border: #8d5bea;
+  --color-btn-primary-hover-bg: #8650ed;
+  --color-btn-primary-hover-border: #a479fa;
+  --color-btn-primary-selected-bg: #6030b9;
+  --color-input-bg: #111521;
+  --color-input-contrast-bg: #171c2a;
+  --color-input-border: #394159;
+  --color-input-shadow: transparent;
+  --color-scale-gray-1: #171c2a;
+  --color-scale-gray-2: #252b3d;
+  --color-scale-gray-3: #394159;
+  --color-scale-gray-4: #626c84;
+  --color-scale-gray-5: #9da7bd;
+  --color-scale-gray-6: #edf0f7;
+  --color-scale-purple-1: #211833;
+  --color-scale-purple-2: #40276d;
+  --color-scale-purple-3: #7138d9;
+  --color-scale-purple-4: #b99aff;
+  --color-prettylights-syntax-comment: #8e99ae;
+  --color-prettylights-syntax-constant: #b99aff;
+  --color-prettylights-syntax-entity: #d0b6ff;
+  --color-prettylights-syntax-string: #9bdcc7;
+  --color-prettylights-syntax-keyword: #d0a0ff;
+  --color-prettylights-syntax-variable: #f1c888;
+  --color-prettylights-syntax-markup-heading: #d0b6ff;
+  --color-prettylights-syntax-markup-bold: #edf0f7;
+  --color-prettylights-syntax-markup-italic: #a6aec1;
+  --color-prettylights-syntax-markup-inserted-text: #65d5a3;
+  --color-prettylights-syntax-markup-deleted-text: #ff8099;
+  --color-primer-shadow-inset: none;
+  --color-primer-shadow-focus: 0 0 0 3px rgba(153, 107, 242, .28);
+  --color-primer-shadow-highlight: 0 0 0 1px rgba(153, 107, 242, .12);
+}
+
+* { box-sizing: border-box; }
+html, body { background: transparent !important; }
+body, button, input, textarea { font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif; }
+.gsc-main { color: var(--color-fg-default); }
+.gsc-comments, .gsc-comment-box, .gsc-comment { border-radius: 14px; }
+.gsc-comment-box, .gsc-comment { border: 1px solid var(--color-border-default); background: var(--color-canvas-subtle); }
+.gsc-comment-box { overflow: hidden; }
+.gsc-comment-box-tabs { background: var(--color-canvas-subtle); }
+.gsc-comment-box-write { background: var(--color-input-bg); }
+.gsc-comment-box-textarea { border-radius: 10px; background: var(--color-input-bg); color: var(--color-fg-default); }
+.gsc-comment-box-textarea:focus { outline: 2px solid rgba(185,154,255,.42); outline-offset: 1px; }
+.gsc-reactions, .gsc-reactions-button { border-radius: 10px; }
+.gsc-header { margin-bottom: 1rem; }
+.gsc-comment-author { font-weight: 650; }
+.gsc-comment-content a, .gsc-header a { color: var(--color-accent-fg); }
+.gsc-comment-content a:hover, .gsc-header a:hover { text-decoration: underline; }
+.gsc-comment-content pre, .gsc-comment-content code { border-radius: 8px; }
+.gsc-comment-content pre { background: var(--color-canvas-inset); border: 1px solid var(--color-border-muted); }
+.gsc-comment-content blockquote { border-left: 3px solid var(--color-accent-emphasis); color: var(--color-fg-muted); }
+.gsc-button, .gsc-social-reaction-summary-item { border-radius: 9px; }
+.gsc-comment-box-bottom { background: var(--color-canvas-subtle); }
+::selection { background: rgba(153, 107, 242, .35); color: #fff; }
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; } }
